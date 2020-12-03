@@ -7,8 +7,8 @@
     background-color: aquamarine;
 }
 
-html {
-    background : #f1f2f6;
+* {
+    background-color : #f1f2f6;
 }
 
 @media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
@@ -42,12 +42,10 @@ html {
     font-family : Arial;
     }
 
-/*
-.center-li{
-    display : flex;
-    align-content: space-between;
-}*/
-
 ul li {
     margin-right: 80px;
 }
+
+nav .navbar-nav li a{
+    color: #2f3542 !important;
+    }
