@@ -42,7 +42,12 @@ html {
     font-family : Arial;
     }
 
+/*
 .center-li{
     display : flex;
-    justify-content : space-around ;
+    align-content: space-between;
+}*/
+
+ul li {
+    margin-right: 80px;
 }
