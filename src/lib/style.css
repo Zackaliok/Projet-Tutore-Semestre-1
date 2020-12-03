@@ -7,8 +7,8 @@
     background-color: aquamarine;
 }
 
-* {
-    background-color : #f1f2f6;
+html,.accueil {
+    background : #f1f2f6;
 }
 
 @media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
