@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aquamarine;
+}
+
+
+@media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
+    .container {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px) { /*Appareils moyens (tablettes etc...)*/
+    .container {
+        background-color: purple;
+    }
+}
+
+@media (min-width: 992px) { /*Grands appareils (ordinateurs etc...)*/
+    .container {
+        background-color: red;
+    }
+}
+
+@media  (min-width: 1200px) {/*Très grands appareils (télévisions etc...)*/
+    .container {
+        background-color: green;
+    }
+}
