@@ -34,3 +34,10 @@ html {
         background-color: green;
     }
 }
+
+.center-nav {
+    margin-left: auto;
+    margin-right: auto;
+    font-size : 25px;
+    font-family : Arial;
+}
