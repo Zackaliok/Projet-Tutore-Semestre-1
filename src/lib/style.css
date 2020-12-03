@@ -40,4 +40,9 @@ html {
     margin-right: auto;
     font-size : 25px;
     font-family : Arial;
+    }
+
+.center-li{
+    display : flex;
+    justify-content : space-around ;
 }
