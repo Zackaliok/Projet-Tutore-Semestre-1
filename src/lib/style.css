@@ -10,6 +10,7 @@
 html {
     background : #f1f2f6;
 }
+
 @media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
     .container {
         background-color: blue;
