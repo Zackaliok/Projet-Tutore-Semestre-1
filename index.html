@@ -8,6 +8,7 @@
     <title>Portail national des IUT informatiques</title>
 </head>
 <body>
+  <!--<div class="container">-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
           <img src="src/media/logo_dut_info.png" alt="Logo du département informatique">
@@ -40,6 +41,46 @@
         <p>Texte</p>
     </div>
 
+    <footer>
+      <!-- A RAJOUTER : LE FORMULAIRE POUR LES ENTREPRISES POUR CONTACTER LES IUT -->
+      <form action="#" method="post">
+        <div>
+          <label for="name">Nom de l'entreprise :</label>
+          <input type="text" id="name" name="user-name" placeholder="Exemple : IBM">
+        </div>
+        <div>
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="user-email" placeholder="exemple@gmail.com">
+        </div>
+        <div>
+          <label for="msg">Message :</label>
+          <textarea name="user-message" id="msg" cols="30" rows="10" placeholder="Entrez votre message ici ..."></textarea>
+        </div>
+        <div>
+          <button type="submit">Envoyer le message</button>
+        </div>
+      </form>
+      <ul>
+        <li>
+          <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+            <img src="src/media/walid.svg" alt="Cv de Walid" class="photo-cv" title="Regarder le CV de Walid">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+            <img src="src/media/gabriel.svg" alt="Cv de Gabriel" class="photo-cv" title="Regarder le CV de Gabriel">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+            <img src="src/media/tristan.svg" alt="Cv de Tristan" class="photo-cv" title="Regarder le CV de Tristan">
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <p>© 2020. Tous droits réservés.</p>
+    </footer>
 
+  <!--</div>-->
 </body>
 </html>
