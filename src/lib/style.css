@@ -50,14 +50,17 @@ ul li {
 nav .navbar-nav li a{
     color: #2f3542 !important;
     }
-
+    
+/*
 .choix-france {
     float : left;
-    width : 800px;
-    margin-left : 400px;
+    width : 80px;
+    margin-left : 400px
 }
-
-
+.choix-uk {
+    width : 80px;
+}
+*/ 
 
 
 
@@ -100,16 +103,16 @@ footer p {
 /* BOUTON POUR REMONTER AU NAVBAR */
 .btn-outside-nav{
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background: #27ae60;
-    bottom: 40px;
+    bottom: 65px;
     right: 50px;
   
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: 65px;
     color:  white;
-    font-size: 22px;
+    font-size: 35px;
   }
 
