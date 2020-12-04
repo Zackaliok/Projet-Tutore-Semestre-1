@@ -9,6 +9,7 @@
 
 html,.accueil {
     background : #f1f2f6;
+    background: linear-gradient(55deg, rgba(241,242,246,1) 0%, rgba(206,214,224,1) 150%);
 }
 
 @media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
@@ -49,3 +50,15 @@ ul li {
 nav .navbar-nav li a{
     color: #2f3542 !important;
     }
+
+.accueil {
+    text-align : center;
+}
+.choix-france {
+    float : left;
+    width : 800px;
+}
+
+.choix-uk {
+    margin-left : 200px;
+}
