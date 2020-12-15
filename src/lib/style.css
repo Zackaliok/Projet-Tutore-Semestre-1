@@ -71,7 +71,6 @@ nav .navbar-nav li a{
 .presentation {
     position:relative;
     text-align: center;
-    color: white;
     }
 .button-pre {
     position: absolute;
@@ -88,6 +87,7 @@ nav .navbar-nav li a{
     box-shadow: 10px 10px 1px 1px #a5b1c2;
     cursor : pointer;
 }
+
 .animation {
     position: absolute;
     top: 30%;
@@ -100,16 +100,129 @@ nav .navbar-nav li a{
     transition : 0.8s;
     opacity:0.8;
     border-radius : 8px;
-    
+    font-size:20px;
+    height:250px;
+    text-align:left;
+}
+.auteur-quote {
+    font-size:10px;
+    font-family : Gill Sans, sans-serif;
+}
+.gras {
+    font-weight: bold;
 }
 .img-fluid {
     opacity : 0.85;
 }
 .quote {
     width : 45px;
-    margin-right : 100%
+    margin-right : 100%;
 }
 
+/* ACCUEIL */
+
+.display {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;-
+}
+
+.ecran {
+    position: relative
+}
+
+.pre-video {
+    position:absolute;
+    top: 8.5%;
+    margin-left: 33.5%;
+    margin-right:auto;
+}
+
+/* FLIPPER ACCROCHE */
+
+.flip-titre {
+    font-size: 30px; 
+    text-transform: uppercase;
+    font-family: arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align:center;
+}
+.flipper {
+    font-family: arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 200%; 
+    color: #fff;
+    flex-direction: column;
+    font-size: 30px; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#flip {
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+#flip > div > div {
+    padding: 4px 12px;
+    height: 50px;
+    margin-bottom: 45px;
+    display: inline-block;
+  }
+
+#flip div:first-child {
+    animation: show 6s linear infinite;
+  }
+  
+#flip div div {
+    background: #42c58a;
+  }
+#flip div:first-child div {
+    background: #4ec7f3;
+  }
+#flip div:last-child div {
+    background: #DC143C;
+  }
+
+/* FLIPPER INFORMATION */
+#flip-annonce {
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+#flip-annonce > div > div {
+    padding: 4px 12px;
+    height: 50px;
+    margin-bottom: 45px;
+    display: inline-block;
+  }
+
+#flip-annonce div:first-child {
+    animation: show 6s linear infinite;
+  }
+  
+#flip-annonce div div {
+    background: #A3BB07;
+  }
+#flip-annonce div:first-child div {
+    background: #A3BB07;
+  }
+#flip-annonce div:last-child div {
+    background: #A3BB07;
+  }
+@keyframes show {
+    0% {margin-top: -270px;}
+    5% {margin-top: -180px;}
+    33% {margin-top: -180px;}
+    38% {margin-top: -90px;}
+    66% {margin-top: -90px;}
+    71% {margin-top: 0px;}
+    99.99% {margin-top: 0px;}
+    100% {margin-top: -270px;}
+  }
 /* FOOTER */
 
 footer {
