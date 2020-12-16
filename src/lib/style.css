@@ -18,7 +18,8 @@ html,.accueil {
     }
 
 ul li {
-    margin-right: 80px;
+    /*margin-right: 80px;*/
+    font-size: 20px;
 }
 
 nav .navbar-nav li a{
@@ -34,21 +35,35 @@ nav .navbar-nav li a{
     justify-content: space-around;
 }
 
+
+.after-nav {
+    display: inline-flex;
+    padding: 0;
+}
     
 @media (min-width: 1024px) {
     .test {
-        display: block;
+        display: flex;
     }
     .navbar-nav {
         display: flex;
     }
-    .test2 {
+    #btn-menu {
         display: none;
     }
 }
 
+@media (min-width : 768px) {
+    .navbar-brand img {
+        width: 200px;
+        
+    }
+}
+
+/*
 @media (min-width: 320px) {
     .navbar-brand img {
         width: 100px;
     }
 }
+*/
