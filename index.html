@@ -10,43 +10,84 @@
     <title>Portail national des IUT informatiques</title>
 </head>
 <body>
-<div class="row">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: inline-flex;">
-        <div class="col-md-2" style="padding: 0; max-width: 150px;">
-            <a class="navbar-brand" href="#" style="margin: 0;">
-                <img src="src/media/logo_dut_info.png" alt="Logo du département informatique" width="150px">
-            </a>
-        </div>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: inline-flex;">
+            <div class="col-md-2" style="padding: 0; max-width: 150px;">
+                <a class="navbar-brand" href="#" style="margin: 0;">
+                    <img src="src/media/logo_dut_info.png" alt="Logo du département informatique" width="150px">
+                </a>
+            </div>
 
-        <div class="col-md-8">
-            <div class="center-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Accès étudiant</a>
-                    </li>
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Accès entreprises</a>
-                    </li>
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Accès enseignant</a>
-                    </li>
-                </ul>
+            <div class="col-md-8">
+                <div class="center-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Accès étudiant</a>
+                        </li>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Accès entreprises</a>
+                        </li>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Accès enseignant</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4 after-nav" >
-            <div class="test">
-                <form class="form-inline md-form form-sm mt-0">
-                    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
-                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Rechercher" aria-label="Search">
-                </form>
+            <div class="col-md-4 after-nav" >
+                <div class="test">
+                    <form class="form-inline md-form form-sm mt-0">
+                        <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Rechercher" aria-label="Search">
+                    </form>
+                </div>
+                <div class="boutons-navbar" style="display: flex;">
+                <img src="src/media/menu-btn.svg" alt="menu" height="25px" id="btn-menu" style="margin-right: 7px;">
+                <img src="src/media/uk-flag.svg" alt="uk-flag" height="25px">
+                </div>
             </div>
-            <div class="boutons-navbar" style="display: flex;">
-              <img src="src/media/menu-btn.svg" alt="menu" height="25px" id="btn-menu" style="margin-right: 7px;">
-              <img src="src/media/uk-flag.svg" alt="uk-flag" height="25px">
+        </nav>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<img src="src/media/footer-shape.svg" alt="footerwave" id="footer_wave" style="margin-bottom: -5px;">
+        <footer class="footer col-md-12">
+            <form action="" class="formulaire">
+                <div class="form_sec_1">
+                    <div class="form_sec_1-1">
+                        <label for="name">Nom de l'entreprise</label>
+                        <input type="text" id="name" name="user-name"  placeholder="Exemple : IBM">
+
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="user-email" placeholder="exemple@gmail.com">
+                    </div>
+                    <div class="form_sec_2">
+                        <label for="msg">Message :</label>
+                        <textarea name="user-message" id="msg" cols="13" rows="5" placeholder="Entrez votre message ici ..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success form-btn">Envoyer le message</button>
+            </form>
+
+            <div>
+                <ul class="liste-photo">
+                    <li>
+                      <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+                        <img src="src/media/walid.svg" alt="Cv de Walid" class="photo-cv" title="Regarder le CV de Walid">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+                        <img src="src/media/gabriel.svg" alt="Cv de Gabriel" class="photo-cv" title="Regarder le CV de Gabriel">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+                        <img src="src/media/tristan.svg" alt="Cv de Tristan" class="photo-cv" title="Regarder le CV de Tristan">
+                      </a>
+                    </li>
+                  </ul>
             </div>
-           
-        </div>
-    </nav>
-</div>
+            <hr>
+            <p>© 2020. Tous droits réservés.</p>
+        </footer>
 </body>
 </html>
