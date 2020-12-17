@@ -16,7 +16,9 @@
 
 html,.accueil {
     background : #f1f2f6;
-    background: linear-gradient(55deg, rgba(241,242,246,1) 0%, rgba(206,214,224,1) 150%);
+    background: linear-gradient(55deg, rgba(241,242,246,1) 0%, rgba(206,214,224,1) 150%) no-repeat center fixed;
+    -webkit-backgroud-size: cover;
+    background-size:cover;
 }
 
 @media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
@@ -72,6 +74,7 @@ nav .navbar-nav li a{
     position:relative;
     text-align: center;
     }
+
 .button-pre {
     position: absolute;
     top: 65%;
@@ -101,7 +104,6 @@ nav .navbar-nav li a{
     opacity:0.8;
     border-radius : 8px;
     font-size:20px;
-    height:250px;
     text-align:left;
 }
 .auteur-quote {
@@ -111,8 +113,9 @@ nav .navbar-nav li a{
 .gras {
     font-weight: bold;
 }
-.img-fluid {
+.img-pre {
     opacity : 0.85;
+    max-width: 100%;
 }
 .quote {
     width : 45px;
