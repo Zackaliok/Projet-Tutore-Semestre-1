@@ -19,6 +19,8 @@ html,.accueil {
     background: linear-gradient(55deg, rgba(241,242,246,1) 0%, rgba(206,214,224,1) 150%) no-repeat center fixed;
     -webkit-backgroud-size: cover;
     background-size:cover;
+    margin: 0;
+    padding : 0;
 }
 
 @media (min-width: 576px) { /*Petits appareils (téléphones etc...)*/
@@ -61,7 +63,7 @@ nav .navbar-nav li a{
     color: #2f3542 !important;
     }
     
-    .background-violet {
+.background-violet {
     background-color: #3e2c5a ;
     color: white;
     text-align:center;
@@ -73,6 +75,8 @@ nav .navbar-nav li a{
 .presentation {
     position:relative;
     text-align: center;
+    display: table-cell;
+    vertical-align:middle;
     }
 
 .button-pre {
@@ -115,7 +119,7 @@ nav .navbar-nav li a{
 }
 .img-pre {
     opacity : 0.85;
-    max-width: 100%;
+    width: 100%;
 }
 .quote {
     width : 45px;
@@ -134,11 +138,31 @@ nav .navbar-nav li a{
     position: relative
 }
 
-.pre-video {
+.ecran img {
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+}
+
+/*.pre-video {
     position:absolute;
     top: 8.5%;
     margin-left: 33.5%;
     margin-right:auto;
+}*/
+
+.iframe-container{
+    position:relative;
+    width: 100%;
+    padding-bottom:56.25%;
+    height:0;
+}
+.iframe-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%
 }
 
 /* FLIPPER ACCROCHE */
