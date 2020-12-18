@@ -122,6 +122,7 @@ nav .navbar-nav li a{
       display: block;
     }
     .menu{
+      z-index: 2;
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -150,14 +151,21 @@ nav .navbar-nav li a{
   }
 
 /* PRESENTATION */
-
+.preview {
+  background-image : url("dut-prev1.jpg");
+  height : 100%;
+  width:100%;
+}
 .presentation {
     position:relative;
     text-align: center;
     display: table-cell;
     vertical-align:middle;
     }
-
+.pre-cover {
+  /*background-image: url("dut-prev1.jpg");*/
+  background-color:red;
+}
 .button-pre {
     position: absolute;
     top: 65%;
@@ -196,7 +204,7 @@ nav .navbar-nav li a{
 .gras {
     font-weight: bold;
 }
-#img-pre {
+.img-pre {
     opacity : 0.85;
     width: 100%;
 }
@@ -210,7 +218,7 @@ nav .navbar-nav li a{
 .display {
     display: flex;
     margin-left: auto;
-    margin-right: auto;-
+    margin-right: auto;
 }
 
 .ecran {
@@ -330,7 +338,7 @@ nav .navbar-nav li a{
     100% {margin-top: -270px;}
   }
 /* FOOTER */
-
+/*
 footer {
     padding: 25px;
     display: flex;
@@ -369,6 +377,59 @@ hr {
 footer p {
     text-align: center;
     color: #f1f2f6;
+}*/
+.footer {
+  padding: 25px;
+  background-color: #3e2c5a;
+}
+
+legend {
+  color: #f1f2f6;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.form_sec_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form_sec_1-1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+
+.form_sec_2 {
+  align-self: center;
+}
+
+hr {
+  background-color: #f1f2f6;
+  width: 50%;
+}
+
+.liste-photo li {
+  list-style-type: none;
+}
+.liste-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.photo-cv {
+  height: 50px;
+}
+
+footer p {
+  text-align: center;
+  color: #f1f2f6;
 }
 
 /* BOUTON POUR REMONTER AU NAVBAR */

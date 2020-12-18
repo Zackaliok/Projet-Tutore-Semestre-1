@@ -50,12 +50,12 @@
       <a href="#">Accès étudiants</a>
       <a href="#">Accès entreprises</a>
       <a href="#">Accès enseignants</a>
+      <a href="#"><img src="src/media/uk-flag.svg" alt="Drapeau UK" height="25px"></a>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
     </ul>
   </div>
-
   <!--<div class="presentation">
       <img src="src/media/dut-prev1.jpg" class="img-pre" alt="Présentation du DUT Info">
         <div class="animation" >
@@ -71,7 +71,9 @@
     </div>-->
 
     <div class="accueil">
-
+     <div class="dut-preview">
+      <img src="src/media/dut-prev1.jpg" alt="">
+    </div>
     <br>
     
     <div class="flip-titre">
@@ -112,50 +114,54 @@
 
       <br><br><br><br>
 
-      
+      <img src="src/media/footer-shape.svg" alt="footerwave" id="footer_wave" style="margin-bottom: -5px;">
+        <footer class="footer col-md-12">
+            <!--FOOTER A FINIR (LE FORM)-->
+            <form action="">
+                <div class='form_sec_1'>
+                    <div class="form_sec_1-1">
+                        <fieldset>
+                            <legend>Nom de l'entreprise</legend>
+                            <input type="text" name="user-name" placeholder="Exemple : IBM">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Adresse e-mail</legend>
+                            <input type="email" name="user-mail" id="user-mail" placeholder="exemple@gmail.com">
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Message :</legend>
+                        <textarea name="user-message" id="user-message" cols="10" rows="5" placeholder="Entrez votre message ici..."></textarea>
+                    </fieldset>
+                </div>
+                <div class="form_sec_2">
+                    <button type="submit" class="btn btn-success form-btn">Envoyer le message</button>
+                </div>
+            </form>
+            <div>
+                <ul class="liste-photo">
+                    <li>
+                      <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+                        <img src="src/media/walid.svg" alt="Cv de Walid" class="photo-cv" title="Regarder le CV de Walid">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+                        <img src="src/media/gabriel.svg" alt="Cv de Gabriel" class="photo-cv" title="Regarder le CV de Gabriel">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
+                        <img src="src/media/tristan.svg" alt="Cv de Tristan" class="photo-cv" title="Regarder le CV de Tristan">
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+            <hr>
+            <p>© 2020. Tous droits réservés.</p>
+        </footer>
 
-          <footer>
-      <!-- A RAJOUTER : LE FORMULAIRE POUR LES ENTREPRISES POUR CONTACTER LES IUT -->
-      <div class="footer-line">
-        <br><br><br><br>
-      </div>
-      <form action="#" method="post">
-        <div>
-          <label for="name">Nom de l'entreprise :</label>
-          <input type="text" id="name" name="user-name" placeholder="Exemple : IBM">
-        </div>
-        <div>
-          <label for="email">Adresse e-mail :</label>
-          <input type="email" id="email" name="user-email" placeholder="exemple@gmail.com">
-        </div>
-        <div>
-          <label for="msg">Message :</label>
-          <textarea name="user-message" id="msg" cols="30" rows="10" placeholder="Entrez votre message ici ..."></textarea>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-success">Envoyer le message</button>
-        </div>
-      </form>
-      <ul>
-        <li>
-          <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
-            <img src="src/media/walid.svg" alt="Cv de Walid" class="photo-cv" title="Regarder le CV de Walid">
-          </a>
-        </li>
-        <li>
-          <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
-            <img src="src/media/gabriel.svg" alt="Cv de Gabriel" class="photo-cv" title="Regarder le CV de Gabriel">
-          </a>
-        </li>
-        <li>
-          <a href="#" target="blank"> <!-- Ici il faut mettre en href la source du pdf + une photo de nous -->
-            <img src="src/media/tristan.svg" alt="Cv de Tristan" class="photo-cv" title="Regarder le CV de Tristan">
-          </a>
-        </li>
-      </ul>
-      <hr>
-      <p>© 2020. Tous droits réservés.</p>
-    </footer>
+          
     </div>
 
 
