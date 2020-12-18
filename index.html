@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--<div class="container">-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
           <img src="src/media/logo_dut_info.png" alt="Logo du département informatique" height="100px">
         </a>
@@ -36,9 +36,27 @@
             <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Rechercher" aria-label="Search">
           </form>
         </div>
-    </nav>
-  
-    <div class="presentation">
+    </nav>--> 
+    
+    <div class="header">
+    <h2 class="logo"><img src="src/media/logo_dut_info.png" alt="Logo du département informatique" height="100px"></h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#">Accueil</a>
+      <a href="#">Accès étudiants</a>
+      <a href="#">Accès entreprises</a>
+      <a href="#">Accès enseignants</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+
+  <!--<div class="presentation">
       <img src="src/media/dut-prev1.jpg" class="img-pre" alt="Présentation du DUT Info">
         <div class="animation" >
          <img src="src/media/Quotation.png" class="quote" >
@@ -49,8 +67,8 @@
 
         <p><div class="auteur-quote"><span class="gras">MALO GASQUET</span>, 21 ans, Master 1 AIGLE</div></p>
         </div>
-      <button class="button-pre">En savoir plus</button>
-    </div>
+      <button class="button-pre" onclick="self.location.href='#'">En savoir plus</button>
+    </div>-->
 
     <div class="accueil">
 
@@ -64,19 +82,20 @@
         <div><div>accessible</div></div>
       </div>
     </div>
-
+    <br>
     <!--<div class="ecran">
    <img src="src/media/moniteur.png" class="display" height="500px"> 
       <div class="ifram-container">
         <iframe class="pre-video" width="560" height="315" src="https://www.youtube.com/embed/mZzBY7osHwk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!--</div> 
+      </div> 
     </div>-->
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mZzBY7osHwk"></iframe>
-    </div>
-
-
-     <div class="flip-titre">
+     <div class="container col-lg-6">
+            <div class="embed-responsive embed-responsive-16by9" style="padding: 5% 0 0 25%" height="50%">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mZzBY7osHwk" allowfullscreen></iframe>
+            </div>
+      </div>
+    <br>
+    <div class="flip-titre">
       Mais c'est aussi
       <div id= "flip-annonce" class="flipper">
         <div><div>46 IUT</div></div>
@@ -97,6 +116,9 @@
 
           <footer>
       <!-- A RAJOUTER : LE FORMULAIRE POUR LES ENTREPRISES POUR CONTACTER LES IUT -->
+      <div class="footer-line">
+        <br><br><br><br>
+      </div>
       <form action="#" method="post">
         <div>
           <label for="name">Nom de l'entreprise :</label>
