@@ -345,6 +345,11 @@ nav .navbar-nav li a{
     }
       }
 /*ARTICLE*/
+#blog {
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
 /*
 .blog-post {
   width:100%;
