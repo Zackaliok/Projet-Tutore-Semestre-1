@@ -14,6 +14,10 @@
     background-color: aquamarine;
 }*/
 
+html {
+  overflow-x: hidden;
+}
+
 html,.accueil {
     background : #f1f2f6;
     background: linear-gradient(55deg, rgba(241,242,246,1) 0%, rgba(206,214,224,1) 150%) no-repeat center fixed;
@@ -151,71 +155,62 @@ nav .navbar-nav li a{
   }
 
 /* PRESENTATION */
-.preview {
-  background-image : url("dut-prev1.jpg");
-  height : 100%;
-  width:100%;
-  overflow: hidden;
-  position:relative;
-  background-repeat : no-repeat;
-}
 .presentation {
-    position:relative;
-    text-align: center;
-    display: table-cell;
-    vertical-align:middle;
-    }
-.pre-cover {
-  /*background-image: url("dut-prev1.jpg");*/
-  background-color:red;
+  margin-top: -20px;
+  background-image: url("../media/dut-prev1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+@media screen and (max-width: 800px) {
+  .presentation {
+    background-image: url("../media/code-background.jpg");
+  }
+}
+
 .button-pre {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin : 10px;
-    background:#20bf6b;
-    border : 1px #20bf6b;
-    color : white;
-    padding: 15px 30px;
-    transition : 0.8s;
-    border-radius:15px;
-    box-shadow: 10px 10px 1px 1px #a5b1c2;
-    cursor : pointer;
+  align-self: center;
+  margin : 10px;
+  background:#20bf6b;
+  border : 1px #20bf6b;
+  color : white;
+  padding: 15px 30px;
+  transition : 0.8s;
+  border-radius:15px;
+  box-shadow: 10px 10px 1px 1px #a5b1c2;
+  cursor : pointer;
 }
 
 .animation {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:black;
-    background:white;
-    margin : 10px;
-    padding: 15px 30px;
-    transition : 0.8s;
-    opacity:0.8;
-    border-radius : 8px;
-    font-size:20px;
-    text-align:left;
-}
-.auteur-quote {
-    font-size:10px;
-    font-family : Gill Sans, sans-serif;
-}
-.gras {
-    font-weight: bold;
-}
-.img-pre {
-    opacity : 0.85;
-    width: 100%;
-}
-.quote {
-    width : 45px;
-    margin-right : 100%;
+  color:black;
+  background:white;
+  margin : 10px;
+  padding: 15px 30px;
+  transition : 0.8s;
+  opacity:0.8;
+  border-radius : 8px;
+  font-size:20px;
+  text-align:left;
 }
 
+.auteur-quote {
+  font-size:10px;
+  font-family : Gill Sans, sans-serif;
+}
+.bold {
+  font-weight: bold;
+}
+
+.quote {
+  width : 45px;
+  margin-right : 100%;
+}
 /* ACCUEIL */
 
 .display {
