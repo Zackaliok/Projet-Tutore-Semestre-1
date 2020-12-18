@@ -340,6 +340,14 @@ nav .navbar-nav li a{
     99.99% {margin-top: 0px;}
     100% {margin-top: -270px;}
   }
+  @media screen and (max-width:800px) {
+    .flip-titre{
+      font-size : 18px;
+    }
+    .flipper{
+        font-size : 18px;
+    }
+      }
 /* FOOTER */
 /*
 footer {
@@ -385,9 +393,19 @@ footer p {
   padding: 25px;
   background-color: #3e2c5a;
 }
-
+.footer input {
+  border-radius : 8px;
+  background-color: #a4b0be;
+  border: #a4b0be;
+}
+.footer textarea {
+  background-color: #a4b0be;
+  border: #a4b0be;
+  border-radius: 10px;
+  width : 30vh;
+}
 legend {
-  color: #f1f2f6;
+  color:white;
 }
 form {
   display: flex;
@@ -427,7 +445,8 @@ hr {
 }
 
 .photo-cv {
-  height: 50px;
+  height: 100px;
+  border-radius: 100%;
 }
 
 footer p {
