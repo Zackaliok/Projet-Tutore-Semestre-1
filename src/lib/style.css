@@ -333,6 +333,8 @@ nav .navbar-nav li a{
 #flip-annonce div:last-child div {
     background: #A3BB07;
   }
+
+/* MEDIA QUERIES DES FLIPPERS */ 
 @keyframes show {
     0% {margin-top: -270px;}
     5% {margin-top: -180px;}
@@ -350,7 +352,35 @@ nav .navbar-nav li a{
     .flipper{
         font-size : 18px;
     }
+    #flip-annonce {
+      height: 35px;
+      overflow: hidden;
+      text-align: center;
+    }
+    #flip {
+      height: 35px;
+      overflow: hidden;
+      text-align: center;
+    }
       }
+@media screen and (max-width: 280px) {
+    .flip-titre {
+      font-size :15px;
+    }
+    .flipper {
+      font-size : 15px;
+    }
+  #flip-annonce {
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+  }
+  #flip {
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+  }
+}
 /* FOOTER */
 
 .footer {
