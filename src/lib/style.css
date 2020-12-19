@@ -77,9 +77,12 @@ nav .navbar-nav li a{
 }
 */
 .header{
-    height: 100px;
+    height: 120px;
     background: #f1f2f6;
-    padding: 0 20px;
+    padding : 10px 20px;
+    position:fixed;
+    width:100%;
+    z-index:1;
   }
   .logo{
     line-height: 100px;
@@ -174,7 +177,11 @@ nav .navbar-nav li a{
     background-image: url("../media/code-background.jpg");
   }
 }
-
+@media screen and (min-width:280px),(max-height: 653px) {
+  .presentation {
+    height:150vh;
+  }
+}
 .button-pre {
   align-self: center;
   margin : 10px;
@@ -344,73 +351,6 @@ nav .navbar-nav li a{
         font-size : 18px;
     }
       }
-/*ARTICLE*/
-#blog {
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-}
-/*
-.blog-post {
-  width:100%;
-  max-width:98rem;
-  padding:5rem;
-  box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.2);
-  display:flex;
-  align-items:center;
-  border-radius: 0.8rem;
-  margin-left:10vh;
-}
-.blog-post_img {
-  min-width: 35rem;
-  max-width:35rem;
-  height:30vh;
-  transform: translateX(-8rem);
-  position:relative;
-  margin-left: 10vh;
-}
-.blog-post_date span{
-  display:block;
-  color:rgba(0,0,0,0.5);
-  font-size:1.6rem;
-  font-weight:600;
-  margin: 0.5rem 0;
-}
-.blog-post_title{
-  font-size:2.5rem;
-  margin: 1.5rem 0 2rem;
-  text-transform:uppercase;
-  color:black;
-}
-.blog-post_text{
-  margin-bottom: 3rem;
-  font-size:1.4rem
-}
-@media screen and(max-width: 1068px) {
-  .blog-post {
-    max-width: 80rem;
-  }
-  .blog-post_img{
-    min-width : 30rem;
-    max-width : 30rem;
-  }
-}
-@media screen and(max-width: 800px) {
-  .blog-post {
-    max-width: 70rem;
-  }
-}
-@media screen and(max-width: 526px) {
-  .blog-post {
-    padding:2.5rem;
-    flex-direction:column;
-  }
-  .blog-post__img{
-    min-width : 100%;
-    max-width : 100%;
-    transform: translate(0, -8rem);
-  }
-}*/
 /* FOOTER */
 
 .footer {
@@ -506,7 +446,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px),(max-height : 1024px) {
   .footer textarea {
     width: 85px;
   }
@@ -515,6 +455,32 @@ footer p {
     height: 75px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer textarea {
+    width: 300px;
+  }
+
+  .photo-cv {
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .footer textarea {
+    width: 100px;
+    height:80px;
+  }
+  .footer legend {
+    font-size: 10px;
+  }
+  .photo-cv {
+    height: 50px;
+  }
+  .footer input {
+    width:80px;
+  }
+}
+
 
 
 /* BOUTON POUR REMONTER AU NAVBAR */
