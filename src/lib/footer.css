@@ -1,0 +1,129 @@
+
+.footer {
+    padding: 25px;
+    background-color: #3e2c5a;
+  }
+  .footer input {
+    border-radius : 8px;
+    background-color: #a4b0be;
+    border: #a4b0be;
+  }
+  .footer textarea {
+    background-color: #a4b0be;
+    border: #a4b0be;
+    border-radius: 10px;
+    width : 300px;
+  }
+  legend {
+    color:white;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  
+  .form_sec_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .form_sec_1-1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+  }
+  
+  .form_sec_2 {
+    align-self: center;
+  }
+  
+  hr {
+    background-color: #f1f2f6;
+    width: 50%;
+  }
+  
+  .liste-photo li {
+    list-style-type: none;
+  }
+  .liste-photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .photo-cv {
+    height: 100px;
+    border-radius: 50px;
+  }
+  
+  
+  footer p {
+    text-align: center;
+    color: #f1f2f6;
+  }
+  
+  @media screen and (max-width: 320px) {
+    .footer legend {
+      font-size: 10px;
+    }
+    .footer textarea {
+      width: 75px;
+    }
+  
+    .photo-cv {
+      height: 50px;
+    }
+      }
+  
+  @media screen and (max-width: 375px) {
+    .footer legend {
+      font-size: 15px;
+    }
+  
+    .footer textarea {
+      width: 75px;
+    }
+  
+    .photo-cv {
+      height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 425px),(max-height : 1024px) {
+    .footer textarea {
+      width: 85px;
+    }
+  
+    .photo-cv {
+      height: 75px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .footer textarea {
+      width: 300px;
+    }
+  
+    .photo-cv {
+      height: 75px;
+    }
+  }
+  
+  @media screen and (max-width: 280px) {
+    .footer textarea {
+      width: 100px;
+      height:80px;
+    }
+    .footer legend {
+      font-size: 10px;
+    }
+    .photo-cv {
+      height: 50px;
+    }
+    .footer input {
+      width:80px;
+    }
+  }
+  

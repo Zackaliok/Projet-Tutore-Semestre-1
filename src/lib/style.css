@@ -1,10 +1,4 @@
-.navbar{
-    position:fixed;
-    display: flex;
-    width: 100%;
-    height: 100px;
-    z-index: 1;
-    }
+
 html {
   overflow-x: hidden;
 }
@@ -17,87 +11,12 @@ html,.accueil {
     margin: 0;
     padding : 0;
 }
-.header{
-    height: 120px;
-    background: #f1f2f6;
-    padding : 10px 20px;
-    position:fixed;
-    width:100%;
-    z-index:1;
-  }
-  .logo{
-    line-height: 100px;
-    float: left;
-    text-transform: uppercase;
-  }
-  
-  .menu{
-    float: right;
-    line-height: 100px;
-  }
-  .menu a{
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0 10px;
-    transition: 0.4s;
-  }
-  .show-menu-btn,.hide-menu-btn{
-    transition: 0.4s;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-  }
-  .show-menu-btn{
-    float: right;
-  }
-  .show-menu-btn i{
-    line-height: 100px;
-  }
-  .menu a:hover,
-  .show-menu-btn:hover,
-  .hide-menu-btn:hover{
-    color: #3498db;
-  }
-  
-  #chk{
-    position: absolute;
-    visibility: hidden;
-    z-index: -1111;
-  }
+/* Navbar */
 
-  @media screen and (max-width:850px) {
-    .show-menu-btn,.hide-menu-btn{
-      display: block;
-    }
-    .menu{
-      z-index: 2;
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #333;
-      right: -100%;
-      top: 0;
-      text-align: center;
-      padding: 80px 0;
-      line-height: normal;
-      transition: 0.7s;
-      color:white;
-    }
-    .menu a{
-      display: block;
-      padding: 20px;
-      color:white;
-    }
-    .hide-menu-btn{
-      position: absolute;
-      top: 40px;
-      right: 40px;
-    }
-    #chk:checked ~ .menu{
-      right: 0;
-    }
-  }
+/* Voir le fichier src/lib/navbar.css */
+
+
+
 
 /* PRESENTATION */
 .presentation {
@@ -323,137 +242,9 @@ html,.accueil {
 }
 
 
+/* Footer */
 
-/* FOOTER */
-
-.footer {
-  padding: 25px;
-  background-color: #3e2c5a;
-}
-.footer input {
-  border-radius : 8px;
-  background-color: #a4b0be;
-  border: #a4b0be;
-}
-.footer textarea {
-  background-color: #a4b0be;
-  border: #a4b0be;
-  border-radius: 10px;
-  width : 300px;
-}
-legend {
-  color:white;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10px;
-}
-
-.form_sec_1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.form_sec_1-1 {
-  display: flex;
-  flex-direction: column;
-  margin-right: 5px;
-}
-
-.form_sec_2 {
-  align-self: center;
-}
-
-hr {
-  background-color: #f1f2f6;
-  width: 50%;
-}
-
-.liste-photo li {
-  list-style-type: none;
-}
-.liste-photo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.photo-cv {
-  height: 100px;
-  border-radius: 50px;
-}
-
-
-footer p {
-  text-align: center;
-  color: #f1f2f6;
-}
-
-@media screen and (max-width: 320px) {
-  .footer legend {
-    font-size: 10px;
-  }
-  .footer textarea {
-    width: 75px;
-  }
-
-  .photo-cv {
-    height: 50px;
-  }
-    }
-
-@media screen and (max-width: 375px) {
-  .footer legend {
-    font-size: 15px;
-  }
-
-  .footer textarea {
-    width: 75px;
-  }
-
-  .photo-cv {
-    height: 50px;
-  }
-}
-
-@media screen and (max-width: 425px),(max-height : 1024px) {
-  .footer textarea {
-    width: 85px;
-  }
-
-  .photo-cv {
-    height: 75px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer textarea {
-    width: 300px;
-  }
-
-  .photo-cv {
-    height: 75px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .footer textarea {
-    width: 100px;
-    height:80px;
-  }
-  .footer legend {
-    font-size: 10px;
-  }
-  .photo-cv {
-    height: 50px;
-  }
-  .footer input {
-    width:80px;
-  }
-}
-
+/* Voir le fichier dans src/lib/footer.css */
 
 
 /* BOUTON POUR REMONTER AU NAVBAR */
