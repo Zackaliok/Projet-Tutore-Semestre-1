@@ -56,6 +56,15 @@
     z-index: -1111;
   }
 
+  #site-search {
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+  }
+  #btn-search {
+    height: 30px;
+  }
+
   @media screen and (max-width:850px) {
     .show-menu-btn,.hide-menu-btn{
       display: block;
