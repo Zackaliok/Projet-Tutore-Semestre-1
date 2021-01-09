@@ -118,11 +118,10 @@ html,.accueil {
   background-color : #cf6a87;
   text-align : center;
   position : fixed;
-  color: white;
+  border-radius: 10px;
+
 }
-.sidebar ul {
-  color:white;
-}
+
 /* FLIPPER ACCROCHE */
 
 .flip-titre {
