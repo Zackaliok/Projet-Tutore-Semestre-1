@@ -112,6 +112,17 @@ html,.accueil {
     height:100%
 }
 
+/* SIDE BAR */ 
+
+.sidebar {
+  background-color : #cf6a87;
+  text-align : center;
+  position : fixed;
+  color: white;
+}
+.sidebar ul {
+  color:white;
+}
 /* FLIPPER ACCROCHE */
 
 .flip-titre {
