@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../media/newFavicon.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="../../lib/style.css">
+    <!--<link rel="stylesheet" href="../../lib/navbar.css">-->
+    <link rel="stylesheet" href="../../lib/footer.css">
+    <title>Portail National IUT Informatique</title>
+</head>
+<style>
+  .mapeuh {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  :root {
+    --primary: #3e2c5a;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+  a:hover {
+    text-decoration: none;
+}
+
+.bg-primary { background-color: var(--primary) !important; }
+
+#sidebar-container {
+    min-height: 100vh;
+}
+  
+#sidebar-container .logo{
+    padding: 0.875rem 1.25rem;
+}
+  
+#sidebar-container .menu {
+    width: 18rem;
+}
+
+#content {
+    overflow-y: auto;
+    height: 10vh;
+    padding-bottom: 2rem;
+}
+.flag {
+                    height: 50px;
+                }
+
+@media (max-width: 768px) {
+    #sidebar-container {
+      display: none;
+    }
+  }
+
+
+</style>
+<body>
+    <div class="d-flex" id="content-wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-primary">
+                <div class="logo">
+                    <h4 class="text-light font-weight-bold mb-0"><img src="../../media/logo_dut_info_light.png" alt="logo_dut_info_light" height="100px"></h4>
+                </div>
+                <div class="menu">
+                    <a href="#presentation" class="d-block text-light p-3 border-0">
+                        Présentation</a>
+
+                    <a href="#formations" class="d-block text-light p-3 border-0">
+                        Formations</a>
+
+                    <a href="#carte" class="d-block text-light p-3 border-0">
+                        Carte</a>
+                    <a href="#apresIUT" class="d-block text-light p-3 border-0">
+                        Après l'IUT</a>
+                    <a href="#temoignages" class="d-block text-light p-3 border-0"> 
+                        Témoignages</a>
+                    <a href="#revuesDePresse" class="d-block text-light p-3 border-0"> 
+                        Revues de Presse</a>
+                    <a href="#liens" class="d-block text-light p-3 border-0">
+                        Liens</a>
+                    <a href="#partenariats" class="d-block text-light p-3 border-0"> 
+                        Partenariats</a>
+                </div>  
+    </div>
+        <!-- Fin sidebar -->
+
+    <div class="accueil" style="width: 100%;">
+
+        <div class="contenuPageEtudiant">
+            <h2 id="presentation">Présentation</h2>
+            <p>Les départements d'informatique des IUT de France forment des étudiants à l'informatique et au travail en équipe afin de les insérer dans la vie professionnelle.</p>
+            <p> Ils proposent ainsi une formation à taille humaine, encadrée par des professeurs disponibles, 
+                ainsi que par des professionnels expérimentés qui apportent aux étudiants 
+                une expérience pratique et concrète des métiers de l'informatique.</p>
+            <p>L'enseignement en informatique (du DUT ou de la Licence Professionnelle) repose sur <b>3 axes</b>, 
+                chacun d'entre eux requérant des qualités et des compétences spécifiques :</p>
+            <h3>Analyse et conception :</h3>
+            <p>Travail préliminaire en relation avec le client pour spécifier son besoin 
+                et ses attentes et la conception du schéma d'un traitement informatique.</p>
+            <p><em>Communication, ouverture d'esprit, capacités d'analyse et de synthèse ...</em></p>
+            <h3>Algorithmique et programmation :</h3>
+            <p>Mise en oeuvre effective du traitement jusqu'au codage.</p>
+            <p><em>Esprit logique, précision technique ...</em> </p>
+            <h3>Architecture système et réseaux :</h3>
+            <p>Fonctionnement d'un ordinateur, de son système d'exploitation et des réseaux (Internet, Intranet, ...).</p>
+            <p> <em>Curiosité, patience ...</em></p>
+            <p> A ces enseignements ciblés s'ajoutent pour moitié des disciplines d'enseignement général 
+                (Mathématiques, Economie et Gestion, Anglais et Communication, ...). Ceci confère à la 
+                formation un aspect pluridisciplinaire.</p>
+            <p>En outre, l'évaluation se fait non seulement sur la théorie mais également sur des mises en situation, 
+                via des projets tuteurés et un stage en entreprise, permettant de valider les connaissances et 
+                compétences acquises lors de la formation.</p>
+
+            <h2 id="formations">Formations</h2>
+            <h3>L'IUT</h3>
+            <p>
+                Les Instituts Universitaires de Technologie en France sont répartis sur tout le territoire et sont au nombre de 115, 
+                ce qui assure un fort ancrage dans l'environnement économique local et régional. Des rencontres entre directeurs de département 
+                des IUT assurent la cohérence nationale de l'enseignement.
+            </p>
+            <p>
+                L'IUT a une qualité d'enseignement universitaire reconnue et plébiscitée par les entreprises depuis plus de 40 ans, 
+                grâce à la mise en place de programmes adaptés à la réalité professionnelle et à la création de diplômes répondant 
+                à l'apparition de nouveaux métiers.
+            </p>
+            <p>
+                Les formations couvrant la plupart des secteurs (secondaire et tertiaire) et proposant la collaboration de professionnels 
+                font la force et le succès des IUT, et permettent de fait aux étudiants de trouver un travail dans les 6 mois suivant 
+                la délivrance du diplôme.
+            </p>
+            <p>
+                Cette diversification des diplômes et des formations amène à mettre en place des modes pédagogiques différents, 
+                qui conviennent ainsi à un plus grand nombre d'étudiants et de professionnels souhaitant reprendre des études ou 
+                faire une validation d'acquis de l'expérience (VAE).
+            </p>
+            <p>
+                En outre, les IUT, en partenariat avec des universités étrangères, proposent des poursuites d'études à l'étranger, ainsi que des stages.
+            </p>
+            <p>
+                Pour plus d'informations vous pouvez visiter ces sites :
+            </p>
+            <ul>
+                <li><a href="http://www.iutenligne.net/">IUT en ligne</a></li>
+                <li><a href="http://www.centrale-iut.org/">La centrale des IUT</a></li>
+                <li><a href="https://www.iut.fr/">Site national des IUT</a></li>
+            </ul>
+            <h3>Département Informatique</h3>
+            <p>
+                L'enseignement de l'informatique à l'IUT fait une large part à la dimension professionnelle tout en 
+                conservant des composantes fondamentales; l'étudiant acquiert ainsi des savoir-faires mais également des connaissances, 
+                des concepts de base et des méthodes de travail qu'il sera à même de mettre à profit en situation professionnelle.
+            </p>
+            <h4>Le DUT, diplôme universitaire et professionnel (niveau L2 du schéma LMD, 120 crédits européens):</h4>
+            <p>
+                Les titulaires du DUT en informatique sont des techniciens supérieurs, capables de participer à la conception, 
+                la réalisation et la mise en oeuvre de systèmes informatiques. Ils peuvent cependant s'ils le désirent poursuivre 
+                leurs études à l'issue de ce diplôme.
+            </p>
+            <p>
+                <b>La Licence Professionnelle «Systèmes Informatiques et Logiciels» (SIL), diplôme de niveau L3 dans le schéma LMD 
+                    (grade de Licence, 180 crédits européens): ces pages présentent les licences professionnelles proposées dans 
+                    les départements informatiques d'IUT.</b>
+            </p>
+            <p>
+                Les titulaires de la licence SIL sont des spécialistes capables de participer à un projet de développement logiciel 
+                et, à terme, d'en prendre la complète responsabilité.
+            </p>
+            <h4>La validation des acquis :</h4>
+            <p>Il est également possible de faire reconnaître son expérience (professionnelle ou non) afin d'obtenir un diplôme, 
+                un titre ou un certificat de qualification professionnelle. Vous pouvez visiter le site du gouvernement concernant 
+                <a href="https://www.travail.gouv.fr/informations-pratiques/fiches-pratiques/formation-professionnelle/validation-acquis-experience-vae-1074.html">
+                    validation des acquis de l'expérience (VAE)
+                </a>.</p>
+            <h3>Programme</h3>
+            <h4>Le programme officiel du DUT</h4>
+            <p>DUT Informatique (pas de traduction anglaise pour l'instant)</p>
+            <div class="programmesDrapeaux">
+                <a href="../../media/programmes/fr.pdf"><img src="../../media/france-flag.svg" alt="Drapeau Français" class="flag"></a>
+                <img src="../../media/uk-flag.svg" alt="Drapeau Anglais" class="flag">
+                <a href="../../media/programmes/de.pdf"><img src="../../media/deutch-flag.svg" alt="Drapeau Allemand" class="flag"></a>
+                <a href="../../media/programmes/es.pdf"><img src="../../media/spain-flag.svg" alt="Drapeau Espagnol" class="flag"></a>
+            </div>
+            <h4>Les résultats d'enquêtes post DUT Informatique</h4>
+            <p>
+                Enquêtes Post DUT Informatique: 
+                <a href="../../media/enquetes/2003.ppt">2003</a> |
+                <a href="../../media/enquetes/2002.ppt">2002</a> |
+                <a href="../../media/enquetes/2001.ppt">2001</a> |
+                <a href="../../media/enquetes/2000.ppt">2000</a> |
+                <a href="../../media/enquetes/1999.ppt">1999</a>
+            </p>
+
+
+            <h2 id="carte">Carte des IUT Informatique</h2>
+            <div class="mapeuh">
+                <img src="../../media/CarteFranceDesignPointee.png" alt="" usemap="#map01">
+                <map name="#map01">
+                  <area shape="circle" coords="183, 51, 5" href="http://www.iut.univ-littoral.fr/wp/calais/" alt="Site de l'IUT de Calais" title="Calais">
+                  <area shape="circle" coords="214, 72, 5" href="https://www.iut-a.univ-lille.fr/" alt="Site de l'IUT de Lille" title="Lille">
+                  <area shape="circle" coords="190, 85, 5" href="http://www.iut-lens.univ-artois.fr/" alt="Site de l'IUT de Lens" title="Lens">
+                  <area shape="circle" coords="227, 93, 5" href="https://www.uphf.fr/IUT/plan-maubeuge" alt="Site de l'IUT de Maubeuge" title="Maubeuge">
+                  <area shape="circle" coords="150, 94, 5" href="https://www-iut.univ-lehavre.fr/" alt="Site de l'IUT du Havre" title="Le Havre">
+                  <area shape="circle" coords="132, 106, 5" href="http://iut-caen.unicaen.fr/" alt="Site de l'IUT de Caen" title="Caen">
+                  <area shape="circle" coords="184, 102, 5" href="https://www.iut-amiens.fr/" alt="Site de l'IUT d'Amiens" title="Amiens">
+                  <area shape="circle" coords="46, 106, 5" href="https://iut-lannion.univ-rennes1.fr/" alt="Site de l'IUT de Lannion" title="Lannion">
+                  <area shape="circle" coords="235, 114, 5" href="https://www.iut-rcc.fr/" alt="Site de l'IUT de Reims" title="Reims">
+                  <area shape="circle" coords="259, 124, 5" href="http://iut-metz.univ-lorraine.fr/" alt="Site de l'IUT de Metz" title="Metz">
+                  <!--<area shape="circle" coords="" href="" alt="Site de l'IUT d'Ile-de-France" title="Ile-de-France"> TRAITEMENT SPECIAL-->
+                  <area shape="circle" coords="276, 133, 5" href="http://iutsd.univ-lorraine.fr/" alt="Site de l'IUT de St Dié" title="St Dié">
+                  <area shape="circle" coords="257, 145, 5" href="https://iut-charlemagne.univ-lorraine.fr/" alt="Site de l'IUT de Nancy Charlemagne" title="Nancy">
+                  <area shape="circle" coords="281, 151, 5" href="https://iutrs.unistra.fr/" alt="Site de l'IUT de Strasbourg" title="Strasbourg">
+                  <area shape="circle" coords="108, 141, 5" href="http://iut-laval.univ-lemans.fr/fr/index.html" alt="Site de l'IUT de Laval" title="Laval">
+                  <area shape="circle" coords="169, 158, 5" href="https://www.univ-orleans.fr/fr/iut-orleans" alt="Site de l'IUT d'Orléans" title="Orléans">
+                  <area shape="circle" coords="64, 157, 5" href="https://www.iutvannes.fr/" alt="Site de l'IUT de Vannes" title="Vannes">
+                  <area shape="circle" coords="82, 172, 5" href="https://iutnantes.univ-nantes.fr/" alt="Site de l'IUT de Nantes" title="Nantes">
+                  <area shape="circle" coords="254, 174, 5" href="http://www.iut-bm.univ-fcomte.fr/" alt="Site de l'IUT de Belfort" title="Belfort">
+                  <area shape="circle" coords="213, 189, 5" href="https://iutdijon.u-bourgogne.fr/www/" alt="Site de l'IUT de Dijon" title="Dijon">
+                  <area shape="circle" coords="80, 203, 5" href="https://www.iut-larochelle.fr/" alt="Site de l'IUT de La Rochelle" title="La Rochelle">
+                  <area shape="circle" coords="229, 215, 5" href="https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-bourg-en-bresse" alt="Site de l'IUT de Bourg en Bresse" title="Bourg en Bresse">
+                  <area shape="circle" coords="133, 221, 5" href="https://www.iut.unilim.fr/" alt="Site de l'IUT de Limoges" title="Limoges">
+                  <area shape="circle" coords="182, 236, 5" href="https://www.iut-clermont.fr/tag/clermontferrand/" alt="Site de l'IUT de Clermont-Ferrand" title="Clermont-Ferrand">
+                  <area shape="circle" coords="234, 234, 5" href="https://iut.univ-lyon1.fr/" alt="Site de l'IUT de Lyon" title="Lyon">
+                  <area shape="circle" coords="274, 227, 5" href="https://www.iut-acy.univ-smb.fr/" alt="Site de l'IUT d'Annecy" title="Annecy">
+                  <area shape="circle" coords="93, 249, 5" href="https://www.iut.u-bordeaux.fr/general/" alt="Site de l'IUT de Bordeaux" title="Bordeaux">
+                  <area shape="circle" coords="193, 250, 5" href="https://www.iut-clermont.fr/tag/lepuyenvelay/" alt="Site de l'IUT du Puy" title="Le Puy">
+                  <area shape="circle" coords="250, 246, 5" href="https://iut2.univ-grenoble-alpes.fr/formations/les-departements-de-l-iut2/informatique-info--149104.kjsp" alt="Site de l'IUT de Grenoble" title="Grenoble">
+                  <area shape="circle" coords="127, 270, 5" href="https://www.iut-blagnac.fr/fr/" alt="Site de l'IUT de Blagnac" title="Blagnac">
+                  <area shape="circle" coords="170, 264, 5" href="https://www.iut-rodez.fr/" alt="Site de l'IUT de Rodez" title="Rodez">
+                  <area shape="circle" coords="235, 261, 5" href="https://www.iut-valence.fr/iut-valence/l-iut-de-valence-aux-portes-du-sud-un-institut-d-etudes-superieures-a-taille-humaine-ou-il-fait-bon-vivre--148009.kjsp" alt="Site de l'IUT de Valence" title="Valence">
+                  <area shape="circle" coords="64, 283, 5" href="https://www.iutbayonne.univ-pau.fr/" alt="Site de l'IUT de Bayonne" title="Bayonne">
+                  <area shape="circle" coords="133, 282, 5" href="https://iut.univ-tlse3.fr/informatique" alt="Site de l'IUT de Toulouse" title="Toulouse">
+                  <area shape="circle" coords="245, 286, 5" href="https://iut.univ-amu.fr/" alt="Site de l'IUT d'Aix en Provence" title="Aix en Provence">
+                  <area shape="circle" coords="196, 295, 5" href="http://iutdepinfo.iutmontp.univ-montp2.fr/" alt="Site de l'IUT de Montpellier" title="Montpellier">
+                  <area shape="circle" coords="239, 311, 5" href="https://iut.univ-amu.fr/sites/arles" alt="Site de l'IUT d'Arles" title="Arles">
+                  <area shape="circle" coords="265, 300, 5" href="http://unice.fr/iut/presentation/accueil" alt="Site de l'IUT de Nice" title="Nice">
+                </map>
+              </div>
+
+
+            <h2 id="apresIUT">Après L'IUT</h2>
+            <h3>Débouchés</h3>
+            <p>Voici la liste des métiers, classés par catégories, accessibles via un DUT Informatique et/ou une Licence Professionnelle en Informatique.</p>
+            <h4>Production et exploitation</h4>
+            <p>Administrateur de bases de données, Administrateur systèmes et réseaux, Analyste d'exploitation, Gestionnaire de parc micro, Technicien help desk, Technicien réseaux et télécoms, Webdesigner, Webmaster.</p>
+            <h4>Etudes, développement et intégration</h4>
+            <p>Chefs de projet en SSII ou en TIC, Développeur de jeux vidéo multimédia, Analyste programmeur, Directeur de projet, Intégrateur, Paramétreur de PGI.</p>
+            <h4>Administration et gestion de la DSI</h4>
+            <p>Auditeur informatique, Directeur des systèmes d'information, Responsable des études, Responsable d'exploitation.</p>
+            <h4>Support et assistance technique</h4>
+            <p>Chargé d'affaires interne, Formateur, Analyste système, Directeur technique, Responsable sécurité , Spécialiste sécurité, Spécialiste méthode, Architecte réseaux, Architecte technique, Architecte base de données.</p>
+            <h4>Conseil en système d'information et maîtrise d'ouvrage (MOA)</h4>
+            <p>Chef de projet MOA, Conseil - consultant en système d'information , Consultant en business intelligence, Consultant en sécurité, Consultant MOA , Consultant ERP , Consultant spécialisé sur des marchés non encore matures, Responsable en conduite du changement, Responsable de SI métier, Responsable de projet fonctionnel, Architecte du SI, Correspondant informatique.</p>
+            <h3>Poursuites d'étude</h3>
+            <p>La vocation première de l'IUT est de mener directement au monde professionnel, mais il est possible de poursuivre ses études si l'étudiant le souhaite réellement.</p>
+            <h4>Après le DUT</h4>
+            <p>Ecoles d'ingénieurs (ENSIMAG, ISIM, ENSEIHT, IIE, ENSSAT, INT, INSA, IFIPS, UTC, ...), Licence et maîtrise d'informatique, Licence et maîtrise de sciences et techniques informatiques, IUP MIAGE (maîtrise des méthodes informatiques appliquées à la gestion), Formation complémentaires à l'étranger, Formation en alternance (préparation au DEST), Master informatique, Licence professionnelle systèmes informatiques et logiciels.</p>
+            <p>Ces pages présentent les licences professionnelles proposées dans les départements informatiques d'IUT.</p>
+
+
+            <h2 id="temoignages">Témoignages</h2>
+            <h3>Témoignage de Damien Lefebvre</h3>
+            <p>Son bac S en poche, Damien Lefebvre a passé quelques mois sur les bancs de la fac, avant de se réorienter, en quête d'une formation plus encadrée. Son expérience universitaire lui ayant révélé un goût prononcé pour l'informatique, il décide de candidater Ã  l'IUT de Villetaneuse afin de préparer un DUT Informatique option Génie Logiciel en 2002.</p>
+            <p>L'encadrement proposé par des professeurs passionnés, l'acquisition de méthodes de travail rigoureuses l'ont incité à  compléter sa formation via la Licence Professionnelle Systèmes Informatique et Logiciel option Génie Logiciel, proposée par le même IUT.</p>
+            <p>" Les connaissances et compétences développées par trois années d'étude de l'algorithmique, des bases de données, mais aussi des aspects comptables du monde de l'Entreprise, ont été la clef qui m'a permis d'être recruté par une grande société de service informatique française, après 4 mois de stage de fin d'année. "</p>
+            <p>Depuis maintenant un an et demi le jeune Analyste Programmeur met ses compétences au service de grands clients, parmi lesquels des établissements bancaires renommés, et souhaite à l'avenir s'orienter vers le " Consulting ".</p>
+
+
+            <h2 id="revuesDePresse">Revues de presse</h2>
+            <h3>Articles à propos des IUT Informatiques :</h3>
+            <ul>
+                <li><a href="https://www.studyrama.com/formations/diplomes/dut/dut-informatique-13596">Le DUT Informatique</a></li>
+                <li><a href="http://prevetud.figaro.net/formation_dossiers/20050315.ETU0010.html">L'Informatique, une matière mature ? L'art de tisser ses réseaux</a></li>
+            </ul>
+            <h3>Articles à propos des IUT en général :</h3>
+            <ul>
+                <li><a href="http://prevetud.figaro.net/formation_dossiers/20050128.FIG0855.html">Les Bac +2 ont encore de beaux jours devant eux</a></li>
+                <li><a href="http://prevetud.figaro.net/formation_dossiers/20041216.FIG0754.html">BTS-DUT Les Bacs +2 à l'heure du LMD</a></li>
+            </ul>
+            <h3>Ces articles sont tirés des sites d'information pour les étudiants ci-contres :</h3>
+            <p><a href="https://www.studyrama.com/">Studyrama</a> | <a href="http://prevetud.figaro.net/">Le figaro étudiant</a> |</p>
+
+            <h2 id="liens">Liens</h2>
+            <h3>La "communauté IUT" :</h3>
+            <ul>
+                <li><a href="">ADIUT</a></li>
+                <li><a href="">IUT en ligne</a></li>
+                <li><a href="">La centrale des IUT</a></li>
+                <li><a href="">Portail du DUT Réseaux et Telecoms</a></li>
+            </ul>
+            <h3>Vie étudiante :</h3>
+            <ul>
+                <li><a href="">CNOUS</a></li>
+                <li><a href="">Ministère de la jeunesse, des Sports et de la Vie Associative</a></li>
+                <li><a href="">Ministère de l'éducation national</a></li>
+                <li><a href="">RENATER</a></li>
+            </ul>
+            <h3>Liste des sites d'information dédiés aux étudiants :</h3>
+            <ul>
+                <li><a href="">Le figaro étudiant</a></li>
+                <li><a href="">Studyrama</a></li>
+            </ul>
+
+            <h2 id="partenariats">Partenariats</h2>
+            <h3>Les entreprises partenaires de la formation :</h3>
+            <p>Les départements d'informatique des IUT ont pour partenaires de grandes sociétés d'informatique. Ce qui permet aux étudiants d'intégrer ces sociétés plus facilement à la fin de leur formation, via le stage de fin d'année.</p>
+            <p>Voici une liste non-exhaustive des sociétés partenaires:</p>
+            <ul>
+                <li><a href="">Atos Origin</a></li>
+                <li><a href="">Bull</a></li>
+                <li><a href="">Capgemini</a></li>
+                <li><a href="">Cigref</a></li>
+                <li><a href="">IBM</a></li>
+                <li><a href="">Microsoft</a></li>
+                <li><a href="">Syntec</a></li>
+                <li><a href="">Unilog</a></li>
+            </ul>
+            <h3>Partenariats à l'international :</h3>
+            <p>En plus des partenariats professionnels, les départements d'informatique en partenariat avec des universités étrangères accueillent des étudiants étrangers pour les former à l'informatique. Mais aussi en envoyant les étudiants effectuer leur stage à l'étranger.</p>
+            <p>Voici une liste des universités étrangères partenaires :</p>
+            <ul>
+                <li><a href="">Université de Brasilia</a></li>
+            </ul>
+        </div>
+            <img src="../../media/footer-shape.svg" alt="footerwave" style="margin-bottom: -5px;" >
+          <footer class="footer col-md-12">
+              <form action="">
+                  <div class='form_sec_1'>
+                      <div class="form_sec_1-1">
+                          <fieldset>
+                              <legend>Nom de l'entreprise</legend>
+                              <input type="text" name="user-name" placeholder="Exemple : IBM">
+                          </fieldset>
+                          <fieldset>
+                              <legend>Adresse e-mail</legend>
+                              <input type="email" name="user-mail" id="user-mail" placeholder="exemple@gmail.com">
+                          </fieldset>
+                      </div>
+                      <fieldset>
+                          <legend>Message :</legend>
+                          <textarea name="user-message" id="user-message" cols="1" rows="5" placeholder="Entrez votre message ici..."></textarea>
+                      </fieldset>
+                  </div>
+                  <br>
+                  <div class="form_sec_2">
+                      <button type="submit" class="btn btn-success form-btn">Envoyer le message</button>
+                  </div>
+              </form>
+              <div>
+                <br>
+                <ul class="liste-photo">
+                  <li>
+                    <a href="#" target="blank"> 
+                      <img src="../../media/cv/walid.png" alt="Cv de Walid" class="photo-cv" title="Regarder le CV de Walid">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="blank"> 
+                      <img src="../../media/cv/gabriel.png" alt="Cv de Gabriel" class="photo-cv" title="Regarder le CV de Gabriel">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="blank"> 
+                      <img src="../../media/cv/tristan.jpg" alt="Cv de Tristan" class="photo-cv" title="Regarder le CV de Tristan">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <p>© 2020. Tous droits réservés.</p>
+          </footer>
+        </div>
+        <!--Bouton pour remonter vers le NavBar-->
+    <a class="btn-outside-nav" href="#"> <i class="fas fa-angle-up"></i> </a>
+</body>
+</html>
