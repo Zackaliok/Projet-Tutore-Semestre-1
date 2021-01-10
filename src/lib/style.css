@@ -254,6 +254,22 @@ html,.accueil {
   color :  #4ec7f3;
 }
 
+/* CAPTCHA */ 
+
+.captcha {
+  height: 75px;
+  width: 175px;
+  border-radius: 5px;
+  background-color: #546de5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#input-captcha {
+  height: 25px;
+  width: 25px;
+}
+
 
 /* Footer */
 
