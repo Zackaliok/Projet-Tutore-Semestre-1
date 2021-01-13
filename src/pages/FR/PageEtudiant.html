@@ -41,11 +41,17 @@ p {
     .bg-primary {
         text-align : center;
     }
-  .mapeuh {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.mapeuh {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#grandeMap {
+    display: block;
+}
+#petiteMap {
+    display: none;
+}
 
   :root {
     --primary: #3e2c5a;
@@ -101,6 +107,14 @@ p {
     }
   }
 
+@media (max-width: 320px) {
+    #grandeMap {
+        display: none;
+    }
+    #petiteMap {
+        display: block;
+    }
+}
 </style>
 <body>
  <div class="header">
@@ -267,61 +281,120 @@ p {
 
 
             <h2 id="carte">Carte des IUT Informatique</h2>
-            <div class="mapeuh">
-                <img src="../../media/CarteFranceDesignPointee.png" alt="" usemap="#map01">
-                <map name="#map01">
-                  <area shape="circle" coords="183, 51, 5" href="http://www.iut.univ-littoral.fr/wp/calais/" alt="Site de l'IUT de Calais" title="Calais">
-                  <area shape="circle" coords="214, 72, 5" href="https://www.iut-a.univ-lille.fr/" alt="Site de l'IUT de Lille" title="Lille">
-                  <area shape="circle" coords="190, 85, 5" href="http://www.iut-lens.univ-artois.fr/" alt="Site de l'IUT de Lens" title="Lens">
-                  <area shape="circle" coords="227, 93, 5" href="https://www.uphf.fr/IUT/plan-maubeuge" alt="Site de l'IUT de Maubeuge" title="Maubeuge">
-                  <area shape="circle" coords="150, 94, 5" href="https://www-iut.univ-lehavre.fr/" alt="Site de l'IUT du Havre" title="Le Havre">
-                  <area shape="circle" coords="132, 106, 5" href="http://iut-caen.unicaen.fr/" alt="Site de l'IUT de Caen" title="Caen">
-                  <area shape="circle" coords="184, 102, 5" href="https://www.iut-amiens.fr/" alt="Site de l'IUT d'Amiens" title="Amiens">
-                  <area shape="circle" coords="46, 106, 5" href="https://iut-lannion.univ-rennes1.fr/" alt="Site de l'IUT de Lannion" title="Lannion">
-                  <area shape="circle" coords="235, 114, 5" href="https://www.iut-rcc.fr/" alt="Site de l'IUT de Reims" title="Reims">
-                  <area shape="circle" coords="259, 124, 5" href="http://iut-metz.univ-lorraine.fr/" alt="Site de l'IUT de Metz" title="Metz">
-                  <area shape="circle" coords="186, 126, 5" href="#IDF" alt="Site de l'IUT d'Ile-de-France" title="Ile-de-France">
-                  <area shape="circle" coords="276, 133, 5" href="http://iutsd.univ-lorraine.fr/" alt="Site de l'IUT de St Dié" title="St Dié">
-                  <area shape="circle" coords="257, 145, 5" href="https://iut-charlemagne.univ-lorraine.fr/" alt="Site de l'IUT de Nancy Charlemagne" title="Nancy">
-                  <area shape="circle" coords="281, 151, 5" href="https://iutrs.unistra.fr/" alt="Site de l'IUT de Strasbourg" title="Strasbourg">
-                  <area shape="circle" coords="108, 141, 5" href="http://iut-laval.univ-lemans.fr/fr/index.html" alt="Site de l'IUT de Laval" title="Laval">
-                  <area shape="circle" coords="169, 158, 5" href="https://www.univ-orleans.fr/fr/iut-orleans" alt="Site de l'IUT d'Orléans" title="Orléans">
-                  <area shape="circle" coords="64, 157, 5" href="https://www.iutvannes.fr/" alt="Site de l'IUT de Vannes" title="Vannes">
-                  <area shape="circle" coords="82, 172, 5" href="https://iutnantes.univ-nantes.fr/" alt="Site de l'IUT de Nantes" title="Nantes">
-                  <area shape="circle" coords="254, 174, 5" href="http://www.iut-bm.univ-fcomte.fr/" alt="Site de l'IUT de Belfort" title="Belfort">
-                  <area shape="circle" coords="213, 189, 5" href="https://iutdijon.u-bourgogne.fr/www/" alt="Site de l'IUT de Dijon" title="Dijon">
-                  <area shape="circle" coords="80, 203, 5" href="https://www.iut-larochelle.fr/" alt="Site de l'IUT de La Rochelle" title="La Rochelle">
-                  <area shape="circle" coords="229, 215, 5" href="https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-bourg-en-bresse" alt="Site de l'IUT de Bourg en Bresse" title="Bourg en Bresse">
-                  <area shape="circle" coords="133, 221, 5" href="https://www.iut.unilim.fr/" alt="Site de l'IUT de Limoges" title="Limoges">
-                  <area shape="circle" coords="182, 236, 5" href="https://www.iut-clermont.fr/tag/clermontferrand/" alt="Site de l'IUT de Clermont-Ferrand" title="Clermont-Ferrand">
-                  <area shape="circle" coords="234, 234, 5" href="https://iut.univ-lyon1.fr/" alt="Site de l'IUT de Lyon" title="Lyon">
-                  <area shape="circle" coords="274, 227, 5" href="https://www.iut-acy.univ-smb.fr/" alt="Site de l'IUT d'Annecy" title="Annecy">
-                  <area shape="circle" coords="93, 249, 5" href="https://www.iut.u-bordeaux.fr/general/" alt="Site de l'IUT de Bordeaux" title="Bordeaux">
-                  <area shape="circle" coords="193, 250, 5" href="https://www.iut-clermont.fr/tag/lepuyenvelay/" alt="Site de l'IUT du Puy" title="Le Puy">
-                  <area shape="circle" coords="250, 246, 5" href="https://iut2.univ-grenoble-alpes.fr/formations/les-departements-de-l-iut2/informatique-info--149104.kjsp" alt="Site de l'IUT de Grenoble" title="Grenoble">
-                  <area shape="circle" coords="127, 270, 5" href="https://www.iut-blagnac.fr/fr/" alt="Site de l'IUT de Blagnac" title="Blagnac">
-                  <area shape="circle" coords="170, 264, 5" href="https://www.iut-rodez.fr/" alt="Site de l'IUT de Rodez" title="Rodez">
-                  <area shape="circle" coords="235, 261, 5" href="https://www.iut-valence.fr/iut-valence/l-iut-de-valence-aux-portes-du-sud-un-institut-d-etudes-superieures-a-taille-humaine-ou-il-fait-bon-vivre--148009.kjsp" alt="Site de l'IUT de Valence" title="Valence">
-                  <area shape="circle" coords="64, 283, 5" href="https://www.iutbayonne.univ-pau.fr/" alt="Site de l'IUT de Bayonne" title="Bayonne">
-                  <area shape="circle" coords="133, 282, 5" href="https://iut.univ-tlse3.fr/informatique" alt="Site de l'IUT de Toulouse" title="Toulouse">
-                  <area shape="circle" coords="245, 286, 5" href="https://iut.univ-amu.fr/" alt="Site de l'IUT d'Aix en Provence" title="Aix en Provence">
-                  <area shape="circle" coords="196, 295, 5" href="http://iutdepinfo.iutmontp.univ-montp2.fr/" alt="Site de l'IUT de Montpellier" title="Montpellier">
-                  <area shape="circle" coords="239, 311, 5" href="https://iut.univ-amu.fr/sites/arles" alt="Site de l'IUT d'Arles" title="Arles">
-                  <area shape="circle" coords="265, 300, 5" href="http://unice.fr/iut/presentation/accueil" alt="Site de l'IUT de Nice" title="Nice">
-                </map>
-              </div>
-              <div class="mapeuh" id="IDF">
-                  <img src="../../media/CarteIDFpointee.png" alt="Région d'Ile de France" usemap="#map02">
-                  <map name="#map02">
-                      <area shape="circle" coords="137, 106, 5" href="https://iutv.univ-paris13.fr/" alt="Site de l'IUT de Villetaneuse" title="Villetaneuse">
-                      <area shape="circle" coords="154, 125, 5" href="https://www.iut.univ-paris8.fr/" alt="Site de l'IUT de Montreuil" title="Montreuil">
-                      <area shape="circle" coords="123, 140, 5" href="https://www.iut.parisdescartes.fr/" alt="Site de l'IUT de Paris 5" title="Paris 5">
-                      <area shape="circle" coords="216, 137, 5" href="http://iut.u-pem.fr/" alt="Site de l'IUT de Marne-la-Vallé" title="Marne-la-Vallé">
-                      <area shape="circle" coords="90, 162, 5" href="https://www.iut-velizy-rambouillet.uvsq.fr/" alt="Site de l'IUT de Vélizy" title="Vélizy">
-                      <area shape="circle" coords="121, 186, 5" href="https://www.iut-orsay.universite-paris-saclay.fr/" alt="Site de l'IUT d'Orsay" title="Orsay">
-                      <area shape="circle" coords="193, 220, 5" href="https://www.iutsf.u-pec.fr/" alt="Site de l'IUT de Fontainebleau" title="Fontainebleau">
-                  </map>
-              </div>
+            <div id="grandeMap">
+                <div class="mapeuh">
+                    <img src="../../media/CarteFranceDesignPointee.png" alt="" usemap="#map01">
+                    <map name="#map01">
+                      <area shape="circle" coords="183, 51, 5" href="http://www.iut.univ-littoral.fr/wp/calais/" alt="Site de l'IUT de Calais" title="Calais">
+                      <area shape="circle" coords="214, 72, 5" href="https://www.iut-a.univ-lille.fr/" alt="Site de l'IUT de Lille" title="Lille">
+                      <area shape="circle" coords="190, 85, 5" href="http://www.iut-lens.univ-artois.fr/" alt="Site de l'IUT de Lens" title="Lens">
+                      <area shape="circle" coords="227, 93, 5" href="https://www.uphf.fr/IUT/plan-maubeuge" alt="Site de l'IUT de Maubeuge" title="Maubeuge">
+                      <area shape="circle" coords="150, 94, 5" href="https://www-iut.univ-lehavre.fr/" alt="Site de l'IUT du Havre" title="Le Havre">
+                      <area shape="circle" coords="132, 106, 5" href="http://iut-caen.unicaen.fr/" alt="Site de l'IUT de Caen" title="Caen">
+                      <area shape="circle" coords="184, 102, 5" href="https://www.iut-amiens.fr/" alt="Site de l'IUT d'Amiens" title="Amiens">
+                      <area shape="circle" coords="46, 106, 5" href="https://iut-lannion.univ-rennes1.fr/" alt="Site de l'IUT de Lannion" title="Lannion">
+                      <area shape="circle" coords="235, 114, 5" href="https://www.iut-rcc.fr/" alt="Site de l'IUT de Reims" title="Reims">
+                      <area shape="circle" coords="259, 124, 5" href="http://iut-metz.univ-lorraine.fr/" alt="Site de l'IUT de Metz" title="Metz">
+                      <area shape="circle" coords="186, 126, 5" href="#IDF" alt="Site de l'IUT d'Ile-de-France" title="Ile-de-France">
+                      <area shape="circle" coords="276, 133, 5" href="http://iutsd.univ-lorraine.fr/" alt="Site de l'IUT de St Dié" title="St Dié">
+                      <area shape="circle" coords="257, 145, 5" href="https://iut-charlemagne.univ-lorraine.fr/" alt="Site de l'IUT de Nancy Charlemagne" title="Nancy">
+                      <area shape="circle" coords="281, 151, 5" href="https://iutrs.unistra.fr/" alt="Site de l'IUT de Strasbourg" title="Strasbourg">
+                      <area shape="circle" coords="108, 141, 5" href="http://iut-laval.univ-lemans.fr/fr/index.html" alt="Site de l'IUT de Laval" title="Laval">
+                      <area shape="circle" coords="169, 158, 5" href="https://www.univ-orleans.fr/fr/iut-orleans" alt="Site de l'IUT d'Orléans" title="Orléans">
+                      <area shape="circle" coords="64, 157, 5" href="https://www.iutvannes.fr/" alt="Site de l'IUT de Vannes" title="Vannes">
+                      <area shape="circle" coords="82, 172, 5" href="https://iutnantes.univ-nantes.fr/" alt="Site de l'IUT de Nantes" title="Nantes">
+                      <area shape="circle" coords="254, 174, 5" href="http://www.iut-bm.univ-fcomte.fr/" alt="Site de l'IUT de Belfort" title="Belfort">
+                      <area shape="circle" coords="213, 189, 5" href="https://iutdijon.u-bourgogne.fr/www/" alt="Site de l'IUT de Dijon" title="Dijon">
+                      <area shape="circle" coords="80, 203, 5" href="https://www.iut-larochelle.fr/" alt="Site de l'IUT de La Rochelle" title="La Rochelle">
+                      <area shape="circle" coords="229, 215, 5" href="https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-bourg-en-bresse" alt="Site de l'IUT de Bourg en Bresse" title="Bourg en Bresse">
+                      <area shape="circle" coords="133, 221, 5" href="https://www.iut.unilim.fr/" alt="Site de l'IUT de Limoges" title="Limoges">
+                      <area shape="circle" coords="182, 236, 5" href="https://www.iut-clermont.fr/tag/clermontferrand/" alt="Site de l'IUT de Clermont-Ferrand" title="Clermont-Ferrand">
+                      <area shape="circle" coords="234, 234, 5" href="https://iut.univ-lyon1.fr/" alt="Site de l'IUT de Lyon" title="Lyon">
+                      <area shape="circle" coords="274, 227, 5" href="https://www.iut-acy.univ-smb.fr/" alt="Site de l'IUT d'Annecy" title="Annecy">
+                      <area shape="circle" coords="93, 249, 5" href="https://www.iut.u-bordeaux.fr/general/" alt="Site de l'IUT de Bordeaux" title="Bordeaux">
+                      <area shape="circle" coords="193, 250, 5" href="https://www.iut-clermont.fr/tag/lepuyenvelay/" alt="Site de l'IUT du Puy" title="Le Puy">
+                      <area shape="circle" coords="250, 246, 5" href="https://iut2.univ-grenoble-alpes.fr/formations/les-departements-de-l-iut2/informatique-info--149104.kjsp" alt="Site de l'IUT de Grenoble" title="Grenoble">
+                      <area shape="circle" coords="127, 270, 5" href="https://www.iut-blagnac.fr/fr/" alt="Site de l'IUT de Blagnac" title="Blagnac">
+                      <area shape="circle" coords="170, 264, 5" href="https://www.iut-rodez.fr/" alt="Site de l'IUT de Rodez" title="Rodez">
+                      <area shape="circle" coords="235, 261, 5" href="https://www.iut-valence.fr/iut-valence/l-iut-de-valence-aux-portes-du-sud-un-institut-d-etudes-superieures-a-taille-humaine-ou-il-fait-bon-vivre--148009.kjsp" alt="Site de l'IUT de Valence" title="Valence">
+                      <area shape="circle" coords="64, 283, 5" href="https://www.iutbayonne.univ-pau.fr/" alt="Site de l'IUT de Bayonne" title="Bayonne">
+                      <area shape="circle" coords="133, 282, 5" href="https://iut.univ-tlse3.fr/informatique" alt="Site de l'IUT de Toulouse" title="Toulouse">
+                      <area shape="circle" coords="245, 286, 5" href="https://iut.univ-amu.fr/" alt="Site de l'IUT d'Aix en Provence" title="Aix en Provence">
+                      <area shape="circle" coords="196, 295, 5" href="http://iutdepinfo.iutmontp.univ-montp2.fr/" alt="Site de l'IUT de Montpellier" title="Montpellier">
+                      <area shape="circle" coords="239, 311, 5" href="https://iut.univ-amu.fr/sites/arles" alt="Site de l'IUT d'Arles" title="Arles">
+                      <area shape="circle" coords="265, 300, 5" href="http://unice.fr/iut/presentation/accueil" alt="Site de l'IUT de Nice" title="Nice">
+                    </map>
+                  </div>
+                  <div class="mapeuh" id="IDF">
+                      <img src="../../media/CarteIDFpointee.png" alt="Région d'Ile de France" usemap="#map02">
+                      <map name="#map02">
+                          <area shape="circle" coords="137, 106, 5" href="https://iutv.univ-paris13.fr/" alt="Site de l'IUT de Villetaneuse" title="Villetaneuse">
+                          <area shape="circle" coords="154, 125, 5" href="https://www.iut.univ-paris8.fr/" alt="Site de l'IUT de Montreuil" title="Montreuil">
+                          <area shape="circle" coords="123, 140, 5" href="https://www.iut.parisdescartes.fr/" alt="Site de l'IUT de Paris 5" title="Paris 5">
+                          <area shape="circle" coords="216, 137, 5" href="http://iut.u-pem.fr/" alt="Site de l'IUT de Marne-la-Vallé" title="Marne-la-Vallé">
+                          <area shape="circle" coords="90, 162, 5" href="https://www.iut-velizy-rambouillet.uvsq.fr/" alt="Site de l'IUT de Vélizy" title="Vélizy">
+                          <area shape="circle" coords="121, 186, 5" href="https://www.iut-orsay.universite-paris-saclay.fr/" alt="Site de l'IUT d'Orsay" title="Orsay">
+                          <area shape="circle" coords="193, 220, 5" href="https://www.iutsf.u-pec.fr/" alt="Site de l'IUT de Fontainebleau" title="Fontainebleau">
+                      </map>
+                  </div>
+            </div>
+            <div id="petiteMap">
+                <div class="mapeuh">
+                    <img src="../../media/PetiteCarteFranceDesignPointee.png" alt="" usemap="#map03">
+                    <map name="#map03">
+                      <area shape="circle" coords="158, 44, 4" href="http://www.iut.univ-littoral.fr/wp/calais/" alt="Site de l'IUT de Calais" title="Calais">
+                      <area shape="circle" coords="185, 62, 4" href="https://www.iut-a.univ-lille.fr/" alt="Site de l'IUT de Lille" title="Lille">
+                      <area shape="circle" coords="164, 73, 4" href="http://www.iut-lens.univ-artois.fr/" alt="Site de l'IUT de Lens" title="Lens">
+                      <area shape="circle" coords="197, 80, 4" href="https://www.uphf.fr/IUT/plan-maubeuge" alt="Site de l'IUT de Maubeuge" title="Maubeuge">
+                      <area shape="circle" coords="130, 81, 4" href="https://www-iut.univ-lehavre.fr/" alt="Site de l'IUT du Havre" title="Le Havre">
+                      <area shape="circle" coords="114, 91, 4" href="http://iut-caen.unicaen.fr/" alt="Site de l'IUT de Caen" title="Caen">
+                      <area shape="circle" coords="159, 88, 4" href="https://www.iut-amiens.fr/" alt="Site de l'IUT d'Amiens" title="Amiens">
+                      <area shape="circle" coords="39, 91, 4" href="https://iut-lannion.univ-rennes1.fr/" alt="Site de l'IUT de Lannion" title="Lannion">
+                      <area shape="circle" coords="203, 99, 4" href="https://www.iut-rcc.fr/" alt="Site de l'IUT de Reims" title="Reims">
+                      <area shape="circle" coords="224, 107, 4" href="http://iut-metz.univ-lorraine.fr/" alt="Site de l'IUT de Metz" title="Metz">
+                      <area shape="circle" coords="161, 109, 4" href="#PetitIDF" alt="Site de l'IUT d'Ile-de-France" title="Ile-de-France">
+                      <area shape="circle" coords="239, 115, 4" href="http://iutsd.univ-lorraine.fr/" alt="Site de l'IUT de St Dié" title="St Dié">
+                      <area shape="circle" coords="222, 126, 4" href="https://iut-charlemagne.univ-lorraine.fr/" alt="Site de l'IUT de Nancy Charlemagne" title="Nancy">
+                      <area shape="circle" coords="243, 131, 4" href="https://iutrs.unistra.fr/" alt="Site de l'IUT de Strasbourg" title="Strasbourg">
+                      <area shape="circle" coords="94, 122, 4" href="http://iut-laval.univ-lemans.fr/fr/index.html" alt="Site de l'IUT de Laval" title="Laval">
+                      <area shape="circle" coords="147, 137, 4" href="https://www.univ-orleans.fr/fr/iut-orleans" alt="Site de l'IUT d'Orléans" title="Orléans">
+                      <area shape="circle" coords="56, 136, 4" href="https://www.iutvannes.fr/" alt="Site de l'IUT de Vannes" title="Vannes">
+                      <area shape="circle" coords="71, 149, 4" href="https://iutnantes.univ-nantes.fr/" alt="Site de l'IUT de Nantes" title="Nantes">
+                      <area shape="circle" coords="220, 151, 4" href="http://www.iut-bm.univ-fcomte.fr/" alt="Site de l'IUT de Belfort" title="Belfort">
+                      <area shape="circle" coords="184, 163, 4" href="https://iutdijon.u-bourgogne.fr/www/" alt="Site de l'IUT de Dijon" title="Dijon">
+                      <area shape="circle" coords="69, 176, 4" href="https://www.iut-larochelle.fr/" alt="Site de l'IUT de La Rochelle" title="La Rochelle">
+                      <area shape="circle" coords="198, 186, 4" href="https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-bourg-en-bresse" alt="Site de l'IUT de Bourg en Bresse" title="Bourg en Bresse">
+                      <area shape="circle" coords="115, 191, 4" href="https://www.iut.unilim.fr/" alt="Site de l'IUT de Limoges" title="Limoges">
+                      <area shape="circle" coords="157, 204, 4" href="https://www.iut-clermont.fr/tag/clermontferrand/" alt="Site de l'IUT de Clermont-Ferrand" title="Clermont-Ferrand">
+                      <area shape="circle" coords="203, 202, 4" href="https://iut.univ-lyon1.fr/" alt="Site de l'IUT de Lyon" title="Lyon">
+                      <area shape="circle" coords="237, 196, 4" href="https://www.iut-acy.univ-smb.fr/" alt="Site de l'IUT d'Annecy" title="Annecy">
+                      <area shape="circle" coords="80, 216, 4" href="https://www.iut.u-bordeaux.fr/general/" alt="Site de l'IUT de Bordeaux" title="Bordeaux">
+                      <area shape="circle" coords="167, 217, 4" href="https://www.iut-clermont.fr/tag/lepuyenvelay/" alt="Site de l'IUT du Puy" title="Le Puy">
+                      <area shape="circle" coords="217, 213, 4" href="https://iut2.univ-grenoble-alpes.fr/formations/les-departements-de-l-iut2/informatique-info--149104.kjsp" alt="Site de l'IUT de Grenoble" title="Grenoble">
+                      <area shape="circle" coords="110, 233, 4" href="https://www.iut-blagnac.fr/fr/" alt="Site de l'IUT de Blagnac" title="Blagnac">
+                      <area shape="circle" coords="147, 228, 4" href="https://www.iut-rodez.fr/" alt="Site de l'IUT de Rodez" title="Rodez">
+                      <area shape="circle" coords="203, 226, 4" href="https://www.iut-valence.fr/iut-valence/l-iut-de-valence-aux-portes-du-sud-un-institut-d-etudes-superieures-a-taille-humaine-ou-il-fait-bon-vivre--148009.kjsp" alt="Site de l'IUT de Valence" title="Valence">
+                      <area shape="circle" coords="56, 245, 4" href="https://www.iutbayonne.univ-pau.fr/" alt="Site de l'IUT de Bayonne" title="Bayonne">
+                      <area shape="circle" coords="115, 244, 4" href="https://iut.univ-tlse3.fr/informatique" alt="Site de l'IUT de Toulouse" title="Toulouse">
+                      <area shape="circle" coords="212, 247, 4" href="https://iut.univ-amu.fr/" alt="Site de l'IUT d'Aix en Provence" title="Aix en Provence">
+                      <area shape="circle" coords="170, 255" href="http://iutdepinfo.iutmontp.univ-montp2.fr/" alt="Site de l'IUT de Montpellier" title="Montpellier">
+                      <area shape="circle" coords="207, 270, 4" href="https://iut.univ-amu.fr/sites/arles" alt="Site de l'IUT d'Arles" title="Arles">
+                      <area shape="circle" coords="229, 260, 4" href="http://unice.fr/iut/presentation/accueil" alt="Site de l'IUT de Nice" title="Nice">
+                    </map>
+                  </div>
+                  <div class="mapeuh" id="PetitIDF">
+                      <img src="../../media/PetiteCarteIDFPointee.png" alt="Région d'Ile de France" usemap="#map04">
+                      <map name="#map04">
+                          <area shape="circle" coords="116, 90, 4" href="https://iutv.univ-paris13.fr/" alt="Site de l'IUT de Villetaneuse" title="Villetaneuse">
+                          <area shape="circle" coords="131, 106, 4" href="https://www.iut.univ-paris8.fr/" alt="Site de l'IUT de Montreuil" title="Montreuil">
+                          <area shape="circle" coords="105, 119, 4" href="https://www.iut.parisdescartes.fr/" alt="Site de l'IUT de Paris 5" title="Paris 5">
+                          <area shape="circle" coords="183, 116, 4" href="http://iut.u-pem.fr/" alt="Site de l'IUT de Marne-la-Vallé" title="Marne-la-Vallé">
+                          <area shape="circle" coords="77, 137, 4" href="https://www.iut-velizy-rambouillet.uvsq.fr/" alt="Site de l'IUT de Vélizy" title="Vélizy">
+                          <area shape="circle" coords="102, 158, 4" href="https://www.iut-orsay.universite-paris-saclay.fr/" alt="Site de l'IUT d'Orsay" title="Orsay">
+                          <area shape="circle" coords="164, 186, 4" href="https://www.iutsf.u-pec.fr/" alt="Site de l'IUT de Fontainebleau" title="Fontainebleau">
+                      </map>
+                  </div>
+            </div>
 
 
             <h2 id="apresIUT">Après L'IUT</h2>
