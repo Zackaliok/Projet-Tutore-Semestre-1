@@ -31,17 +31,7 @@ h3 {
     margin-left : 10vh;
     list-style-type: circle;
 }
-.retour li {
-    list-style-type: none;
-    display : inline;
-    border : 5px solid transparent;
-    text-align : center;
-    text-transform : uppercase;
-}
-.retour a {
-    margin-left : auto;
-    margin-right : auto;
-}
+
 p {
     margin-left: 10vh;
 }
@@ -86,7 +76,7 @@ p {
     padding-bottom: 2rem;
 }
 .flag {
-        height: 50px;
+                    height: 50px;
                 }
 
 .bloc-opaque {
@@ -107,7 +97,6 @@ p {
         display: none;
     }
   }
-
 
 </style>
 <body>
@@ -133,17 +122,17 @@ p {
   </div>
 
     <div class="bloc-opaque">
-      <!-- Création de vide car le sticky empêchait de voir le début du texte-->
+
     </div>
 
     <div class="d-flex" id="content-wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-container" class="bg-primary">
-                <div class="logo">
-                    <h4 class="text-light font-weight-bold mb-0"> <a href="../../../index.html"><img src="../../media/logo_dut_info_light.png" alt="logo_dut_info_light" height="100px"></a></h4>
-                </div>
                 <div class="menu">
+                <div class="logo">
+                     <a href="../../../index.html"><img src="../../media/logo_dut_info_light.png"  height="100px"></a>
+                </div>
                     <a href="#presentation" class="d-block text-light p-3 border-0">
                         Présentation</a>
 
@@ -162,6 +151,7 @@ p {
                         Liens</a>
                     <a href="#partenariats" class="d-block text-light p-3 border-0"> 
                         Partenariats</a>
+                        <a href="../EN/StudentPage.html"><img src="../../media/uk-flag.svg" alt="Drapeau UK" height="25px" title="Go to the English Site"></a>
                 </div>  
     </div>
         <!-- Fin sidebar -->
@@ -274,7 +264,7 @@ p {
 
 
             <h2 id="carte">Carte des IUT Informatique</h2>
-            <!--<div class="mapeuh">
+            <div class="mapeuh">
                 <img src="../../media/CarteFranceDesignPointee.png" alt="" usemap="#map01">
                 <map name="#map01">
                   <area shape="circle" coords="183, 51, 5" href="http://www.iut.univ-littoral.fr/wp/calais/" alt="Site de l'IUT de Calais" title="Calais">
@@ -287,7 +277,7 @@ p {
                   <area shape="circle" coords="46, 106, 5" href="https://iut-lannion.univ-rennes1.fr/" alt="Site de l'IUT de Lannion" title="Lannion">
                   <area shape="circle" coords="235, 114, 5" href="https://www.iut-rcc.fr/" alt="Site de l'IUT de Reims" title="Reims">
                   <area shape="circle" coords="259, 124, 5" href="http://iut-metz.univ-lorraine.fr/" alt="Site de l'IUT de Metz" title="Metz">
-                  <!--<area shape="circle" coords="" href="" alt="Site de l'IUT d'Ile-de-France" title="Ile-de-France"> TRAITEMENT SPECIAL
+                  <area shape="circle" coords="186, 126, 5" href="#IDF" alt="Site de l'IUT d'Ile-de-France" title="Ile-de-France">
                   <area shape="circle" coords="276, 133, 5" href="http://iutsd.univ-lorraine.fr/" alt="Site de l'IUT de St Dié" title="St Dié">
                   <area shape="circle" coords="257, 145, 5" href="https://iut-charlemagne.univ-lorraine.fr/" alt="Site de l'IUT de Nancy Charlemagne" title="Nancy">
                   <area shape="circle" coords="281, 151, 5" href="https://iutrs.unistra.fr/" alt="Site de l'IUT de Strasbourg" title="Strasbourg">
@@ -316,7 +306,19 @@ p {
                   <area shape="circle" coords="239, 311, 5" href="https://iut.univ-amu.fr/sites/arles" alt="Site de l'IUT d'Arles" title="Arles">
                   <area shape="circle" coords="265, 300, 5" href="http://unice.fr/iut/presentation/accueil" alt="Site de l'IUT de Nice" title="Nice">
                 </map>
-              </div>-->
+              </div>
+              <div class="mapeuh" id="IDF">
+                  <img src="../../media/CarteIDFpointee.png" alt="Région d'Ile de France" usemap="#map02">
+                  <map name="#map02">
+                      <area shape="circle" coords="137, 106, 5" href="https://iutv.univ-paris13.fr/" alt="Site de l'IUT de Villetaneuse" title="Villetaneuse">
+                      <area shape="circle" coords="154, 125, 5" href="https://www.iut.univ-paris8.fr/" alt="Site de l'IUT de Montreuil" title="Montreuil">
+                      <area shape="circle" coords="123, 140, 5" href="https://www.iut.parisdescartes.fr/" alt="Site de l'IUT de Paris 5" title="Paris 5">
+                      <area shape="circle" coords="216, 137, 5" href="http://iut.u-pem.fr/" alt="Site de l'IUT de Marne-la-Vallé" title="Marne-la-Vallé">
+                      <area shape="circle" coords="90, 162, 5" href="https://www.iut-velizy-rambouillet.uvsq.fr/" alt="Site de l'IUT de Vélizy" title="Vélizy">
+                      <area shape="circle" coords="121, 186, 5" href="https://www.iut-orsay.universite-paris-saclay.fr/" alt="Site de l'IUT d'Orsay" title="Orsay">
+                      <area shape="circle" coords="193, 220, 5" href="https://www.iutsf.u-pec.fr/" alt="Site de l'IUT de Fontainebleau" title="Fontainebleau">
+                  </map>
+              </div>
 
 
             <h2 id="apresIUT">Après L'IUT</h2>
@@ -364,22 +366,22 @@ p {
             <h2 id="liens">Liens</h2>
             <h3>La "communauté IUT" :</h3>
             <ul>
-                <li><a href="">ADIUT</a></li>
-                <li><a href="">IUT en ligne</a></li>
-                <li><a href="">La centrale des IUT</a></li>
-                <li><a href="">Portail du DUT Réseaux et Telecoms</a></li>
+                <li><a href="https://www.iut.fr/">ADIUT</a></li>
+                <li><a href="http://www.iutenligne.net/">IUT en ligne</a></li>
+                <li><a href="http://www.centrale-iut.org/">La centrale des IUT</a></li>
+                <li><a href="https://www.iut-rt.net/">Portail du DUT Réseaux et Telecoms</a></li>
             </ul>
             <h3>Vie étudiante :</h3>
             <ul>
-                <li><a href="">CNOUS</a></li>
-                <li><a href="">Ministère de la jeunesse, des Sports et de la Vie Associative</a></li>
-                <li><a href="">Ministère de l'éducation national</a></li>
-                <li><a href="">RENATER</a></li>
+                <li><a href="https://www.etudiant.gouv.fr/fr">CNOUS</a></li>
+                <li><a href="https://www.jeunes.gouv.fr/">Ministère de la jeunesse, des Sports et de la Vie Associative</a></li>
+                <li><a href="https://www.education.gouv.fr/">Ministère de l'éducation national</a></li>
+                <li><a href="https://www.renater.fr/">RENATER</a></li>
             </ul>
             <h3>Liste des sites d'information dédiés aux étudiants :</h3>
             <ul>
-                <li><a href="">Le figaro étudiant</a></li>
-                <li><a href="">Studyrama</a></li>
+                <li><a href="http://prevetud.figaro.net/">Le figaro étudiant</a></li>
+                <li><a href="https://www.studyrama.com/">Studyrama</a></li>
             </ul>
 
             <h2 id="partenariats">Partenariats</h2>
@@ -387,20 +389,20 @@ p {
             <p>Les départements d'informatique des IUT ont pour partenaires de grandes sociétés d'informatique. Ce qui permet aux étudiants d'intégrer ces sociétés plus facilement à la fin de leur formation, via le stage de fin d'année.</p>
             <p>Voici une liste non-exhaustive des sociétés partenaires:</p>
             <ul>
-                <li><a href="">Atos Origin</a></li>
-                <li><a href="">Bull</a></li>
-                <li><a href="">Capgemini</a></li>
-                <li><a href="">Cigref</a></li>
-                <li><a href="">IBM</a></li>
-                <li><a href="">Microsoft</a></li>
-                <li><a href="">Syntec</a></li>
-                <li><a href="">Unilog</a></li>
+                <li><a href="http://www.si.fr.atosorigin.com/">Atos Origin</a></li>
+                <li><a href="https://atos.net/en/?utm_source=www.bull.com%2F&utm_medium=301">Bull</a></li>
+                <li><a href="http://www.fr.capgemini.com/">Capgemini</a></li>
+                <li><a href="https://www.cigref.fr/">Cigref</a></li>
+                <li><a href="https://www.ibm.com/fr-fr">IBM</a></li>
+                <li><a href="https://www.microsoft.com/fr-fr/">Microsoft</a></li>
+                <li><a href="https://www.syntec.fr/">Syntec</a></li>
+                <li><a href="http://www.unilog.fr/">Unilog</a></li>
             </ul>
             <h3>Partenariats à l'international :</h3>
             <p>En plus des partenariats professionnels, les départements d'informatique en partenariat avec des universités étrangères accueillent des étudiants étrangers pour les former à l'informatique. Mais aussi en envoyant les étudiants effectuer leur stage à l'étranger.</p>
             <p>Voici une liste des universités étrangères partenaires :</p>
             <ul>
-                <li><a href="">Université de Brasilia</a></li>
+                <li><a href="https://unb.br/">Université de Brasilia</a></li>
             </ul>
         </div>
         </div>
@@ -450,6 +452,11 @@ p {
               </div>
               <hr>
               <p>© 2020. Tous droits réservés.</p>
+              <p>
+                <input type="checkbox" name="RDGP">
+                En cochant cette case, vous acceptez que les données collectées dans le présent  formulaire soient utilisées afin de répondre au mieux à votre demande. Ces informations sont exclusivement réservées à l'usage du service destinataire . <br>
+  Depuis la loi informatique et libertés du 6 janvier 1978 modifiée et conformément au Règlement Générale sur la Protection des Données(n°2016/679), vous bénéficiez d'un droit d’accès, de rectification ou de suppressions des informations qui vous concernent. Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez vous adresser à webmaster@iut-informatique.fr .
+              </p>
           </footer>
         </div>
         <!--Bouton pour remonter vers le NavBar-->
